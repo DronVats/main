@@ -1,0 +1,298 @@
+/* https://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+}
+html, body {
+	height:100%;
+}
+
+body{
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	/* background-color: #ff4444; */
+}
+
+a{
+	text-decoration: none;
+}
+h1, h2, .nav-logo{
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+.footer{
+	height: 200px;
+	display: block;
+}
+
+/* Width Setting*/
+.nav-hold, .container, .image-grid, .form-container{
+	width: 95%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* Navigation */
+.nav-bar{
+	width: 100%;
+	background: #222;
+
+}
+
+.nav-hold{
+	overflow: hidden;
+}
+
+.nav-logo{
+	float:left;
+	display:block;
+	padding:20px 10px;
+	color: #f9f9f9;
+	font-weight: 700;
+}
+
+.nav-list{
+	float: right;
+
+}
+.nav-list li{
+	float: left;
+}
+
+.nav-list li a{
+	display: block;
+	padding: 20px 10px;
+	color: #f9f9f9;
+	text-transform: uppercase;
+}
+.nav-menu{
+	display: none;	
+}
+/*container*/
+.container{
+	padding:130px 10px 10px 10px;
+}
+.container h1,
+.container h2,
+.form-container h2{
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: .25em;
+	margin-bottom: 20px; 
+	text-transform: uppercase;
+}
+
+.container h2,
+.form-container h2{
+	margin-top: 35px;
+}
+
+.container p{
+	line-height: 1.35em;
+
+}
+
+/*Image Grid*/
+.image-grid,
+.form-container{
+	overflow:hidden;
+	padding: 5px;
+    object-fit: fill;
+}
+
+.cell{
+    margin-right: 20px;
+}
+.para{
+    display: block;
+    height: 175px;
+    width: 319px;
+    font-size: 25px;
+    left: 22rem;
+    top: 80rem;
+    /* font-size: 10px; */
+    /* background-color: blue; */
+    position: absolute;
+}
+.image-grid-square{
+	width: 20%;
+	float: left;
+	padding: 5px;
+	overflow: hidden
+}
+.image-grid-square img{
+	width: 100%;
+	float:left;
+    
+}
+
+/* form container*/
+.form-section{
+	width: 25%;
+	float:left;
+	padding: 5px;
+}
+
+.message-section,
+.submit-section{
+	width: 100%
+}
+
+.form-section label{
+	display: block;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	font-size: .85em;
+	letter-spacing: .1em;
+}
+
+.form-section input,
+.form-section textarea{
+	width: 100%;
+	padding-bottom: 5px 10px;
+	font-size: 1.1em;
+	line-height: 1.3em;
+	border: none;
+
+}
+
+.form-section input:focus,
+.form-section textarea:focus{
+	color: #252525;
+	background: #C4E9F5;
+}
+
+
+.form-section textarea{
+	resize:none;
+	height: 150px;
+	padding:10px;
+}
+
+.form-section input.submit-button{
+	float: none;
+	display: block;
+	border:none;
+	outline: none;
+	background: #111;
+	color: #f9f9f9;
+	padding: 15px 10px;
+	cursor: pointer;
+	max-width: 500px;
+	margin: 0 auto;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .25em;
+
+
+}
+
+
+/* IE 10+ Viewport fix*/
+@-ms-viewport { width:device-width; }
+@viewport { width:device-width; }
+
+
+/*Tablet*/
+@media screen and (max-width:1024px){
+
+	.image-grid-square{
+	width: 25%;
+}
+.form-section{
+	width:50%;
+}
+.message-section,
+.submit-section{
+	width: 100%
+}
+
+}
+
+/* Phone - 767px */
+@media screen and (max-width:768px){
+	.nav-menu{
+		float:right;
+		color: #f9f9f9;
+		display: block;
+		padding: 20px 10px;
+		cursor: pointer;
+	}
+	.nav-list{
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		height: 0;
+	}
+
+	.nav-open{
+		height:auto;
+	}
+
+	.nav-list li{
+		width: 100%;
+	}
+	.image-grid-square{
+	width: 50%;
+}
+
+}
+
+/* Phone - 400px */
+@media screen and (max-width:400px){
+	.image-grid-square{
+	width: 100%;
+	}
+	
+	.form-section
+{
+		width: 100%
+	}
+}
